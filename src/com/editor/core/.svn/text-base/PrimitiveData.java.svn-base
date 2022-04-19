@@ -1,0 +1,20 @@
+package com.editor.core;
+
+import org.eclipse.swt.graphics.Color;
+
+public interface PrimitiveData {
+
+	public enum OpaqueSide {
+		NORTH,
+		WEST,
+		SOUTH,
+		EAST;
+	}
+	
+	public OpaqueSide getOpaqueSide();
+	public void setOpaqueSide(OpaqueSide side);
+	
+	public Color getColor();
+	public void setColor(Color color);
+	
+}
